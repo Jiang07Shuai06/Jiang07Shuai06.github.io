@@ -53,91 +53,32 @@
       </tags>
   </entry>
   <entry>
-    <title>第一篇文章</title>
+    <title>示例文章</title>
     <url>/2024/08/31/test/</url>
-    <content><![CDATA[<p>&#x2F;&#x2F; 测试<br>12345<br>上山打老虎</p>
+    <content><![CDATA[
+<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="77757203f5db5a22f775eac1d250805f0f476da4ec6fab2559940acb4ccba7fc">5844f566621fccb9c583f0174433e5302d4d1af5160886dd5b64e32199b83216250ab36520720720e031335c66d474abe53195f9da6c376be75fd59cb1915352e377ff86ccb3c672c62706d7e8f5a75c</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<link href="/css/hbe.style.css" rel="stylesheet" type="text/css"><script data-swup-reload-script type="module" src="/js/plugins/hbe.js"></script>
+<script data-swup-reload-script type="module">
+import {initHBE} from "/js/plugins/hbe.js";
+  console.log("hexo-blog-encrypt: loaded.");
+    initHBE();
+</script>
 ]]></content>
       <categories>
-        <category>样本</category>
+        <category>示例</category>
       </categories>
       <tags>
         <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>心灵鸡汤007</title>
-    <url>/2024/11/02/%E5%BF%83%E7%81%B5%E9%B8%A1%E6%B1%A4007/</url>
-    <content><![CDATA[<p>最近很焦虑，总是担心一些没有发生的事情，做计划也老是往最坏的方向想，但是这两天晚上夜跑的时候突然就想通了，也没那么内耗了，想要分享记录下来：</p>
-<p>现在的 “大学生活” 让我学会接受所有可能性，不再机械地活着，不再批判他人的选择和决定，</p>
-<p>有人努力奋斗，我钦佩他不顾一切的勤奋</p>
-<p>有人选择躺平，我羡慕她享受生活的自由</p>
-<p>有人频繁约会，我觉得他的经历丰富多彩</p>
-<p>有人追求纯爱，我祝他找到自我的第一选择</p>
-<p>有人选择毕业就结婚，我希望他幸福</p>
-<p>有女孩享受带大学四年单身自由，我欣赏她的独立</p>
-<p>互联网上总是争吵 “大学” 的价值观，因为人总是习惯性地，把自我价值观强加给别人</p>
-<p>然而有什么事只有一个答案呢？谁能说自己地选择更正确呢？所处的世界是一个多元化地，要学会接受 “不同”</p>
-<p>🫡😶‍🌫️🥱😃😄⛷️💧💫🪸💯</p>
-]]></content>
-      <categories>
-        <category>生活感悟</category>
-      </categories>
-      <tags>
-        <tag>qwq</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>正则表达式</title>
-    <url>/2024/10/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
-    <content><![CDATA[<h5 id="1、锚点"><a href="#1、锚点" class="headerlink" title="1、锚点"></a>1、锚点</h5><p>^ 	匹配字符串或行的开头<br>$ 	匹配字符串或行的末尾<br>\b	匹配单词的开头或末尾<br>\B	匹配不在单词的开头或末尾的位置</p>
-<h5 id="2、字符类"><a href="#2、字符类" class="headerlink" title="2、字符类"></a>2、字符类</h5><p>[abc]	 字符集，匹配集合中的任意字符<br>[^abc]     反选字符集，匹配不在集合中的任意字符<br>[a-z]	  匹配两个字符之间的任意字符，包括它们本身<br>.		匹配除换行符之外的任意字符<br>\w	 	匹配字母、数字或下划线<br>\W           匹配除字母、数字或下划线之外的任意字符<br>\d 		匹配所有数字<br>\D           匹配除数字外的任意字符<br>\s            匹配所有空白字符<br>\S           匹配除空白字符以外的任意字符</p>
-<h5 id="3、量词与分支"><a href="#3、量词与分支" class="headerlink" title="3、量词与分支"></a>3、量词与分支</h5><p>‘+’	      表达式匹配一个或多个<br>‘*’ 	表达式匹配零个或多个<br>{n}	       表达式匹配恰好出现 n 次的元素<br>{n,}	表达h式匹配至少出现 n 次的元素<br>{n,m}	表达式匹配 n 到 m 次的元素<br>?	使用表达式可选<br>|	类似于“或”，用于匹配多种符合条件的表达式之一</p>
-<h5 id="4、零宽断言"><a href="#4、零宽断言" class="headerlink" title="4、零宽断言"></a>4、零宽断言</h5><p>(?&#x3D;)       正向先行断言<br>(?!) 	 负向先行断言<br>(?&lt;&#x3D;)     正向后行断言<br>(?&lt;!)      负向后行断言</p>
-<h5 id="5、标志"><a href="#5、标志" class="headerlink" title="5、标志"></a>5、标志</h5><p>i	使表达式忽略大小写<br>g	确保表达式不会在检索到第一个匹配项时停止<br>m	如果不启用，”^”和”$”只匹配整个字符串的开始和结束，而不会单独匹配每一行</p>
-<h5 id="6、组和引用"><a href="#6、组和引用" class="headerlink" title="6、组和引用"></a>6、组和引用</h5><p>( )	      使表达式分组<br>\1	     引用表达式的分组<br>(?:)	创建无法引用的分组</p>
-<h5 id="扩展："><a href="#扩展：" class="headerlink" title="扩展："></a>扩展：</h5><ul>
-<li>sed（流编辑器）中的模式空间和保存空间</li>
-</ul>
-<p>模式空间（Pattern Space）</p>
-<p>  就像是一个临时的工作区。当 <code>sed</code> 处理一行文本时，会把这一行内容放到模式空间里。然后在这个模式空间中对这行文本进行各种操作，比如替换、删除、打印等。</p>
-<p>保持空间（Hold Space）</p>
-<p>  这是一个额外的存储区域。你可以把一些内容从模式空间复制到保持空间进行暂存，或者从保持空间把内容取回模	式空间进行进一步处理。比如你在处理一个文件时，遇到一些特殊的行想先保存起来，等处理到后面的时候再拿出	来用，就可以把这些行放到保持空间</p>
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-      <tags>
-        <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>外星人入侵</title>
-    <url>/2024/10/04/%E5%A4%96%E6%98%9F%E4%BA%BA%E5%85%A5%E4%BE%B5/</url>
-    <content><![CDATA[<h4 id="遇到的问题及注意事项："><a href="#遇到的问题及注意事项：" class="headerlink" title="遇到的问题及注意事项："></a>遇到的问题及注意事项：</h4><ul>
-<li><p>编写计分模块 <code>scoreborad.py</code> 时，变量引用错误，没搞清楚使用的是值传递还是引用传递</p>
-<p>  参考链接  <a class="link"   href="https://blog.csdn.net/hohaizx/article/details/78427406" >https://blog.csdn.net/hohaizx/article/details/78427406<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-</li>
-<li><p>飞船数量与设置模块 <code>settings.py</code> 中的飞船设置相关</p>
-</li>
-<li><p>外星人、子弹、飞船移动速度以及幅度与设置模块 <code>settings.py</code> 中的 <code>initialize_dynamic_settings</code> 函数设置相关</p>
-</li>
-</ul>
-<h4 id="参考资料及源码："><a href="#参考资料及源码：" class="headerlink" title="参考资料及源码："></a>参考资料及源码：</h4><ol>
-<li><p>参考书籍《Python编程——从入门到实践》</p>
-</li>
-<li><p>参考教程链接  <a class="link"   href="https://www.modb.pro/db/49581" >https://www.modb.pro/db/49581<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
-</li>
-<li><p>通过百度网盘分享的文件：alien_invasion_2.0.zip</p>
-<p> 链接：<a class="link"   href="https://pan.baidu.com/s/1NTkG7Mk_5sw4uzQLVU8ieQ?pwd=byte" >https://pan.baidu.com/s/1NTkG7Mk_5sw4uzQLVU8ieQ?pwd=byte<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> </p>
-<p> 提取码：byte</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -174,6 +115,82 @@
       </categories>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>外星人入侵</title>
+    <url>/2024/10/04/%E5%A4%96%E6%98%9F%E4%BA%BA%E5%85%A5%E4%BE%B5/</url>
+    <content><![CDATA[<h4 id="遇到的问题及注意事项："><a href="#遇到的问题及注意事项：" class="headerlink" title="遇到的问题及注意事项："></a>遇到的问题及注意事项：</h4><ul>
+<li><p>编写计分模块 <code>scoreborad.py</code> 时，变量引用错误，没搞清楚使用的是值传递还是引用传递</p>
+<p>  参考链接  <a class="link"   href="https://blog.csdn.net/hohaizx/article/details/78427406" >https://blog.csdn.net/hohaizx/article/details/78427406<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+</li>
+<li><p>飞船数量与设置模块 <code>settings.py</code> 中的飞船设置相关</p>
+</li>
+<li><p>外星人、子弹、飞船移动速度以及幅度与设置模块 <code>settings.py</code> 中的 <code>initialize_dynamic_settings</code> 函数设置相关</p>
+</li>
+</ul>
+<h4 id="参考资料及源码："><a href="#参考资料及源码：" class="headerlink" title="参考资料及源码："></a>参考资料及源码：</h4><ol>
+<li><p>参考书籍《Python编程——从入门到实践》</p>
+</li>
+<li><p>参考教程链接  <a class="link"   href="https://www.modb.pro/db/49581" >https://www.modb.pro/db/49581<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+</li>
+<li><p>通过百度网盘分享的文件：alien_invasion_2.0.zip</p>
+<p> 链接：<a class="link"   href="https://pan.baidu.com/s/1NTkG7Mk_5sw4uzQLVU8ieQ?pwd=byte" >https://pan.baidu.com/s/1NTkG7Mk_5sw4uzQLVU8ieQ?pwd=byte<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> </p>
+<p> 提取码：byte</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>正则表达式</title>
+    <url>/2024/10/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
+    <content><![CDATA[<h5 id="1、锚点"><a href="#1、锚点" class="headerlink" title="1、锚点"></a>1、锚点</h5><p>^ 	匹配字符串或行的开头<br>$ 	匹配字符串或行的末尾<br>\b	匹配单词的开头或末尾<br>\B	匹配不在单词的开头或末尾的位置</p>
+<h5 id="2、字符类"><a href="#2、字符类" class="headerlink" title="2、字符类"></a>2、字符类</h5><p>[abc]	 字符集，匹配集合中的任意字符<br>[^abc]     反选字符集，匹配不在集合中的任意字符<br>[a-z]	  匹配两个字符之间的任意字符，包括它们本身<br>.		匹配除换行符之外的任意字符<br>\w	 	匹配字母、数字或下划线<br>\W           匹配除字母、数字或下划线之外的任意字符<br>\d 		匹配所有数字<br>\D           匹配除数字外的任意字符<br>\s            匹配所有空白字符<br>\S           匹配除空白字符以外的任意字符</p>
+<h5 id="3、量词与分支"><a href="#3、量词与分支" class="headerlink" title="3、量词与分支"></a>3、量词与分支</h5><p>‘+’	      表达式匹配一个或多个<br>‘*’ 	表达式匹配零个或多个<br>{n}	       表达式匹配恰好出现 n 次的元素<br>{n,}	表达h式匹配至少出现 n 次的元素<br>{n,m}	表达式匹配 n 到 m 次的元素<br>?	使用表达式可选<br>|	类似于“或”，用于匹配多种符合条件的表达式之一</p>
+<h5 id="4、零宽断言"><a href="#4、零宽断言" class="headerlink" title="4、零宽断言"></a>4、零宽断言</h5><p>(?&#x3D;)       正向先行断言<br>(?!) 	 负向先行断言<br>(?&lt;&#x3D;)     正向后行断言<br>(?&lt;!)      负向后行断言</p>
+<h5 id="5、标志"><a href="#5、标志" class="headerlink" title="5、标志"></a>5、标志</h5><p>i	使表达式忽略大小写<br>g	确保表达式不会在检索到第一个匹配项时停止<br>m	如果不启用，”^”和”$”只匹配整个字符串的开始和结束，而不会单独匹配每一行</p>
+<h5 id="6、组和引用"><a href="#6、组和引用" class="headerlink" title="6、组和引用"></a>6、组和引用</h5><p>( )	      使表达式分组<br>\1	     引用表达式的分组<br>(?:)	创建无法引用的分组</p>
+<h5 id="扩展："><a href="#扩展：" class="headerlink" title="扩展："></a>扩展：</h5><ul>
+<li>sed（流编辑器）中的模式空间和保存空间</li>
+</ul>
+<p>模式空间（Pattern Space）</p>
+<p>  就像是一个临时的工作区。当 <code>sed</code> 处理一行文本时，会把这一行内容放到模式空间里。然后在这个模式空间中对这行文本进行各种操作，比如替换、删除、打印等。</p>
+<p>保持空间（Hold Space）</p>
+<p>  这是一个额外的存储区域。你可以把一些内容从模式空间复制到保持空间进行暂存，或者从保持空间把内容取回模	式空间进行进一步处理。比如你在处理一个文件时，遇到一些特殊的行想先保存起来，等处理到后面的时候再拿出	来用，就可以把这些行放到保持空间</p>
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>Shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>心灵鸡汤007</title>
+    <url>/2024/11/02/%E5%BF%83%E7%81%B5%E9%B8%A1%E6%B1%A4007/</url>
+    <content><![CDATA[<p>最近很焦虑，总是担心一些没有发生的事情，做计划也老是往最坏的方向想，但是这两天晚上夜跑的时候突然就想通了，也没那么内耗了，想要分享记录下来：</p>
+<p>现在的 “大学生活” 让我学会接受所有可能性，不再机械地活着，不再批判他人的选择和决定，</p>
+<p>有人努力奋斗，我钦佩他不顾一切的勤奋</p>
+<p>有人选择躺平，我羡慕她享受生活的自由</p>
+<p>有人频繁约会，我觉得他的经历丰富多彩</p>
+<p>有人追求纯爱，我祝他找到自我的第一选择</p>
+<p>有人选择毕业就结婚，我希望他幸福</p>
+<p>有女孩享受带大学四年单身自由，我欣赏她的独立</p>
+<p>互联网上总是争吵 “大学” 的价值观，因为人总是习惯性地，把自我价值观强加给别人</p>
+<p>然而有什么事只有一个答案呢？谁能说自己地选择更正确呢？所处的世界是一个多元化地，要学会接受 “不同”</p>
+<p>🫡😶‍🌫️🥱😃😄⛷️💧💫🪸💯</p>
+]]></content>
+      <categories>
+        <category>生活感悟</category>
+      </categories>
+      <tags>
+        <tag>qwq</tag>
       </tags>
   </entry>
 </search>
