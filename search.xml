@@ -112,52 +112,6 @@ import {initHBE} from "/js/plugins/hbe.js";
       </tags>
   </entry>
   <entry>
-    <title>正则表达式</title>
-    <url>/2024/10/10/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
-    <content><![CDATA[<h5 id="1、锚点"><a href="#1、锚点" class="headerlink" title="1、锚点"></a>1、锚点</h5><p>^ 	匹配字符串或行的开头<br>$ 	匹配字符串或行的末尾<br>\b	匹配单词的开头或末尾<br>\B	匹配不在单词的开头或末尾的位置</p>
-<h5 id="2、字符类"><a href="#2、字符类" class="headerlink" title="2、字符类"></a>2、字符类</h5><p>[abc]	 字符集，匹配集合中的任意字符<br>[^abc]     反选字符集，匹配不在集合中的任意字符<br>[a-z]	  匹配两个字符之间的任意字符，包括它们本身<br>.		匹配除换行符之外的任意字符<br>\w	 	匹配字母、数字或下划线<br>\W           匹配除字母、数字或下划线之外的任意字符<br>\d 		匹配所有数字<br>\D           匹配除数字外的任意字符<br>\s            匹配所有空白字符<br>\S           匹配除空白字符以外的任意字符</p>
-<h5 id="3、量词与分支"><a href="#3、量词与分支" class="headerlink" title="3、量词与分支"></a>3、量词与分支</h5><p>‘+’	      表达式匹配一个或多个<br>‘*’ 	表达式匹配零个或多个<br>{n}	       表达式匹配恰好出现 n 次的元素<br>{n,}	表达h式匹配至少出现 n 次的元素<br>{n,m}	表达式匹配 n 到 m 次的元素<br>?	使用表达式可选<br>|	类似于“或”，用于匹配多种符合条件的表达式之一</p>
-<h5 id="4、零宽断言"><a href="#4、零宽断言" class="headerlink" title="4、零宽断言"></a>4、零宽断言</h5><p>(?&#x3D;)       正向先行断言<br>(?!) 	 负向先行断言<br>(?&lt;&#x3D;)     正向后行断言<br>(?&lt;!)      负向后行断言</p>
-<h5 id="5、标志"><a href="#5、标志" class="headerlink" title="5、标志"></a>5、标志</h5><p>i	使表达式忽略大小写<br>g	确保表达式不会在检索到第一个匹配项时停止<br>m	如果不启用，”^”和”$”只匹配整个字符串的开始和结束，而不会单独匹配每一行</p>
-<h5 id="6、组和引用"><a href="#6、组和引用" class="headerlink" title="6、组和引用"></a>6、组和引用</h5><p>( )	      使表达式分组<br>\1	     引用表达式的分组<br>(?:)	创建无法引用的分组</p>
-<h5 id="扩展："><a href="#扩展：" class="headerlink" title="扩展："></a>扩展：</h5><ul>
-<li>sed（流编辑器）中的模式空间和保存空间</li>
-</ul>
-<p>模式空间（Pattern Space）</p>
-<p>  就像是一个临时的工作区。当 <code>sed</code> 处理一行文本时，会把这一行内容放到模式空间里。然后在这个模式空间中对这行文本进行各种操作，比如替换、删除、打印等。</p>
-<p>保持空间（Hold Space）</p>
-<p>  这是一个额外的存储区域。你可以把一些内容从模式空间复制到保持空间进行暂存，或者从保持空间把内容取回模	式空间进行进一步处理。比如你在处理一个文件时，遇到一些特殊的行想先保存起来，等处理到后面的时候再拿出	来用，就可以把这些行放到保持空间</p>
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-      <tags>
-        <tag>Shell</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>心灵鸡汤007</title>
-    <url>/2024/11/02/%E5%BF%83%E7%81%B5%E9%B8%A1%E6%B1%A4007/</url>
-    <content><![CDATA[<p>最近很内耗，总会莫名想一些没有发生的事情，这两天夜跑的时候突然就想通了，也没那么焦虑了，想要记录下来：</p>
-<p>现在的 “大学生活” 让我学会接受所有可能性，不再机械地活着，不再批判他人的选择和决定，</p>
-<p>有人努力奋斗，我钦佩他不顾一切的勤奋</p>
-<p>有人选择躺平，我羡慕她享受生活的自由</p>
-<p>有人频繁约会，我觉得他的经历丰富多彩</p>
-<p>有人追求纯爱，我祝他找到自我的第一选择</p>
-<p>有人选择毕业就结婚，我希望他幸福</p>
-<p>有女孩享受大学四年单身自由，我欣赏她的独立</p>
-<p>互联网上总是争吵 “大学” 的价值观，因为人们总是习惯性地，把自我价值观强加给别人</p>
-<p>然而有什么事只有一个答案呢？谁能说自己地选择更正确呢？所处的世界是一个多元化地，总要学会接受 “不同”</p>
-<p>🫡😶‍🌫️🥱😃😄⛷️💧💫🪸💯</p>
-]]></content>
-      <categories>
-        <category>生活感悟</category>
-      </categories>
-      <tags>
-        <tag>o_/&#92;_o</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>天气预报自动推送</title>
     <url>/2024/10/07/%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5%E6%8E%A8%E9%80%81/</url>
     <content><![CDATA[<h4 id="一、申请微信测试公众号（https-mp-weixin-qq-com-debug-cgi-bin-sandbox-t-sandbox-login）"><a href="#一、申请微信测试公众号（https-mp-weixin-qq-com-debug-cgi-bin-sandbox-t-sandbox-login）" class="headerlink" title="一、申请微信测试公众号（https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login）"></a>一、申请微信测试公众号（<a class="link"   href="https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login%EF%BC%89" >https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login）<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></h4><ol>
