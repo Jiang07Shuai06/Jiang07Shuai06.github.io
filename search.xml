@@ -337,7 +337,7 @@ import {initHBE} from "/js/plugins/hbe.js";
 <p>LOG：在&#x2F;var&#x2F;log&#x2F;messages文件中记录日志信息，然后将数据包传递给下一条规则，也就是说除了记录以外不对数据包做任何其他操作，仍然让下一条规则去匹配。<br><br></p>
 <h3 id="★-°-☆-￣▽￣-°★-。"><a href="#★-°-☆-￣▽￣-°★-。" class="headerlink" title="★,°:.☆(￣▽￣)&#x2F;$:.°★ 。"></a><em>★,°</em>:.☆(￣▽￣)&#x2F;$:<em>.°★</em> 。</h3>]]></content>
       <categories>
-        <category>技术分析</category>
+        <category>技术分享</category>
       </categories>
       <tags>
         <tag>iptables</tag>
