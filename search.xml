@@ -266,7 +266,16 @@ import {initHBE} from "/js/plugins/hbe.js";
 <p><strong>防火墙从物理上可以分为硬件防火墙和软件防火墙</strong></p>
 <p>硬件防火墙：硬件防火墙是一种专门设计的网络安全设备，它基于硬件平台运行，性能高，成本高。</p>
 <p>软件防火墙：软件防火墙是安装在计算机操作系统或网络设备操作系统中的软件程序。性能低，成本低。<br>&nbsp;<br><br></p>
-<h3 id="关于iptables"><a href="#关于iptables" class="headerlink" title="关于iptables"></a>关于iptables</h3><p>![iptables](<a class="link"   href="https://i-blog.csdnimg.cn/direct/42ae65a590e4497288734c175aba00f5.jpeg#pic_center" >https://i-blog.csdnimg.cn/direct/42ae65a590e4497288734c175aba00f5.jpeg#pic_center<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> &#x3D;x400)<br><strong>iptables</strong> 其实不是真正的防火墙，我们可以把它理解成一个客户端代理，用户通过iptables这个代理，将用户的安全设定执行到对应的”安全框架”中，这个”安全框架”才是真正的防火墙，这个框架的名字叫 <strong>netfilter</strong>。<br><br><br>netfilter 才是防火墙真正的安全框架（framework），netfilter位于内核空间。 </p>
+<h3 id="关于iptables"><a href="#关于iptables" class="headerlink" title="关于iptables"></a>关于iptables</h3><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://byte76-1325194493.cos.ap-beijing.myqcloud.com/test/iptbales.jpg"
+                      style="zoom:33%;" 
+                >
+**iptables** 其实不是真正的防火墙，我们可以把它理解成一个客户端代理，用户通过iptables这个代理，将用户的安全设定执行到对应的”安全框架”中，这个”安全框架”才是真正的防火墙，这个框架的名字叫 **netfilter**。
+<br>
+netfilter 才是防火墙真正的安全框架（framework)，netfilter位于内核空间。 
+
 <p>iptables 其实是一个命令行工具，位于用户空间，我们用这个工具操作真正的框架。</p>
 <p>netfilter&amp;iptables 组成Linux平台下的包过滤防火墙，与大多数的Linux软件一样，这个包过滤防火墙是免费的，它可以代替昂贵的商业防火墙解决方案，完成封包过滤、封包重定向和网络地址转换（NAT）等功能。</p>
 <p>Netfilter 是 Linux 内核中用于实现防火墙、网络地址转换 (NAT) 和包过滤的框架。<br>相关组件<br>iptables：最常用的用户空间工具，用于配置 Netfilter 规则。<br>nftables：是 iptables 的继任者，提供了更强大的功能和更简洁的语法。<br>&nbsp;<br><br></p>
@@ -332,7 +341,12 @@ import {initHBE} from "/js/plugins/hbe.js";
 <p> raw     表中的规则可以被哪些链使用：PREROUTING，OUTPUT</p>
 <p> mangle  表中的规则可以被哪些链使用：PREROUTING，INPUT，FORWARD，OUTPUT，POSTROUTING</p>
 <p> nat     表中的规则可以被哪些链使用：PREROUTING，INPUT，OUTPUT，POSTROUTING</p>
-<p> filter  表中的规则可以被哪些链使用：INPUT，FORWARD，OUTPUT<br> &nbsp;<br> <br><br>![](<a class="link"   href="https://byte76-1325194493.cos.ap-beijing.myqcloud.com/test/a5077250afe74664a78aba3ef7a0e6fe.png#pic_center" >https://byte76-1325194493.cos.ap-beijing.myqcloud.com/test/a5077250afe74664a78aba3ef7a0e6fe.png#pic_center<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a> &#x3D;x400)</p>
+<p> filter  表中的规则可以被哪些链使用：INPUT，FORWARD，OUTPUT<br> &nbsp;<br> <br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://byte76-1325194493.cos.ap-beijing.myqcloud.com/test/a5077250afe74664a78aba3ef7a0e6fe.png"
+                      style="zoom:33%;" 
+                ></p>
 <h3 id="规则的概念"><a href="#规则的概念" class="headerlink" title="规则的概念"></a>规则的概念</h3><p>规则：根据指定的匹配条件来尝试匹配每个流经此处的报文，一旦匹配成功，则由规则后面指定的处理动作进行处理；   </p>
 <p>那么我们来通俗的解释一下什么是iptables的规则，之前打过一个比方，每条”链”都是一个”关卡”，每个通过这个”关卡”的报文都要匹配这个关卡上的规则，如果匹配，则对报文进行对应的处理，比如说，你我二人此刻就好像两个”报文”，你我二人此刻都要入关，可是城主有命，只有器宇轩昂的人才能入关，不符合此条件的人不能入关，于是守关将士按照城主制定的”规则”，开始打量你我二人，最终，你顺利入关了，而我已被拒之门外，因为你符合”器宇轩昂”的标准，所以把你”放行”了，而我不符合标准，所以没有被放行，其实，”器宇轩昂”就是一种”匹配条件”，”放行”就是一种”动作”，”匹配条件”与”动作”组成了规则。</p>
 <p><strong>规则由 匹配条件 和 处理动作 组成</strong><br><strong>匹配条件</strong><br>匹配条件分为基本匹配条件与扩展匹配条件</p>
