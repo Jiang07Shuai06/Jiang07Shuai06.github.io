@@ -6,7 +6,7 @@
   <link href="https://jiang07shuai06.github.io/atom.xml" rel="self"/>
   
   <link href="https://jiang07shuai06.github.io/"/>
-  <updated>2025-01-08T10:19:55.774Z</updated>
+  <updated>2025-01-12T04:31:06.481Z</updated>
   <id>https://jiang07shuai06.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>堡垒机(1) | 概念&amp;部署</title>
+    <link href="https://jiang07shuai06.github.io/2025/01/12/%E5%A0%A1%E5%9E%92%E6%9C%BA-1-%E6%A6%82%E5%BF%B5-%E9%83%A8%E7%BD%B2/"/>
+    <id>https://jiang07shuai06.github.io/2025/01/12/%E5%A0%A1%E5%9E%92%E6%9C%BA-1-%E6%A6%82%E5%BF%B5-%E9%83%A8%E7%BD%B2/</id>
+    <published>2025-01-12T03:30:10.000Z</published>
+    <updated>2025-01-12T04:31:06.481Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>堡垒机是一种用于单点登录、集中授权、访问控制和操作审计的安全设备，也被称为跳板机。它就像网络中的 “安全卫士”，主要作用是对内部网络中运维人员的操作进行集中管理和控制，是实现运维安全的核心设备。<br>主要功能：身份认证、访问控制、操作审计、会话管理<br><br><br>Jumpserver 是一款由python编写开源的跳板机（堡垒机）系统，实现了跳板机应有的功能。基于ssh协议来管理，客户端无需安装agent。<br>&nbsp;<br>在公司中，分配人员服务器权限也是相当方便，如：来一个新人，在Jumpserver分配Jumpserver账号即可，人员离职，在Jumpserver删掉人员账号即可。无需担心人员离职留下后门，当然前提是检查防火墙，只允许Jumpserver服务器有其他服务器的ssh的权限。<br><br><br>目前市面上已经有很多jumpserver产品提供使用，这里就介绍最广泛的一款。<br>官方网址：<a class="link"   href="https://www.jumpserver.org/" >https://www.jumpserver.org/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a><br>&nbsp;<br><br></p><h4 id="JumpServer-部署"><a href="#JumpServer-部署" class="headerlink" title="JumpServer 部署"></a>JumpServer 部署</h4><p>参考官方部署文档：<a class="link"   href="https://docs.jumpserver.org/zh/master/install/setup_by_fast/" >https://docs.jumpserver.org/zh/master/install/setup_by_fast/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a><br>&nbsp;<br>这款也是基于docker运行的，不管一键部署，还是手动部署都是docker，手动部署区别主要是改密码、IP、端口自定义之类的。默认的其实已经很好没必要改了。相对来所，搭建还是比较容易的，官方脚本一步到位。<br><br><br>&nbsp;<br>由于魔法的原因可能会无法连接到 GitHub，这里可以考虑使用以下命令</p><div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://resource.fit2cloud.com/jumpserver/jumpserver/releases/latest/download/quick_start.sh | bash</span><br></pre></td></tr></table></figure></div><blockquote><p>注：4核8G （最低）且可以访问互联网的 64 位 Linux 主机</p></blockquote><br>当然，如果需要离线安装也可以到下方 URI 获取软件包后，进行手动部署<p><a class="link"   href="https://community.fit2cloud.com/#/products/jumpserver/downloads" >https://community.fit2cloud.com/#/products/jumpserver/downloads<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p><br>下面是我部署完成后显示的信息<p>&nbsp;</p><ol><li><p>可以使用如下命令启动, 然后访问<br>cd &#x2F;opt&#x2F;jumpserver-installer-v4.5.0<br>.&#x2F;jmsctl.sh start</p></li><li><p>其它一些管理命令<br>.&#x2F;jmsctl.sh stop<br>.&#x2F;jmsctl.sh restart<br>.&#x2F;jmsctl.sh backup<br>.&#x2F;jmsctl.sh upgrade<br>更多还有一些命令, 你可以 .&#x2F;jmsctl.sh –help 来了解</p></li><li><p>Web 访问<br><a class="link"   href="http://192.168.241.66/" >http://192.168.241.66:80<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a><br>默认用户: admin  默认密码: ChangeMe</p></li></ol><p> 更多信息<br>官方网站: <a class="link"   href="https://www.jumpserver.org/" >https://www.jumpserver.org/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a><br>官方文档: <a class="link"   href="https://docs.jumpserver.org/" >https://docs.jumpserver.org/<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h4&gt;&lt;p&gt;堡垒机是一种用于单点登录、集中授权、访问控制和操作审计的安全设备，也被称为跳板机。它就像网络中的 “安全卫士”，主要作用是对内部网络中运维人</summary>
+      
+    
+    
+    
+    <category term="技术分享" scheme="https://jiang07shuai06.github.io/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="堡垒机" scheme="https://jiang07shuai06.github.io/tags/%E5%A0%A1%E5%9E%92%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>iptables(1) | iptables概念</title>
